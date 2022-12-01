@@ -43,12 +43,13 @@ const Container = styled.div`
 `;
 
 const ImagePart = styled.div`
-  height: 50%;
+  weight: 750px;
+  height: 35%;
 `;
 
 const LogoImg = styled.img`
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 350px;
 `;
 
 const StoryPart = styled.div`
@@ -61,7 +62,7 @@ const BtnPart = styled.div`
 `;
 
 const Button = styled.button`
-  weight: 20rem;
+  width: 350px;
   height: 3rem;
   font-size: 1rem;
   background-color: lightblue;

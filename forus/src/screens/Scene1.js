@@ -39,12 +39,13 @@ const Container = styled.div`
 `;
 
 const ImagePart = styled.div`
-  height: 50%;
+  weight: 750px;
+  height: 30%;
 `;
 
 const LogoImg = styled.img`
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
 `;
 
 const StoryPart = styled.div`

@@ -51,12 +51,13 @@ const Container = styled.div`
 `;
 
 const ImagePart = styled.div`
-  height: 50%;
+  weight: 750px;
+  height: 35%;
 `;
 
 const LogoImg = styled.img`
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 350px;
 `;
 
 const StoryPart = styled.div`
@@ -69,21 +70,21 @@ const BtnPart = styled.div`
 `;
 
 const Button = styled.button`
-  width: 30rem;
+  width: 350px;
   height: 5rem;
   font-size: 1rem;
   background-color: lightpink;
 `;
 
 const Button2 = styled.button`
-  width: 30rem;
+  width: 350px;
   height: 5rem;
   font-size: 1rem;
   background-color: lightgreen;
 `;
 
 const Button3 = styled.button`
-  width: 30rem;
+  width: 350px;
   height: 5rem;
   font-size: 1rem;
   background-color: lightyellow;
