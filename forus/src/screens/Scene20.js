@@ -2,7 +2,7 @@ import styled from "styled-components";
 import scene24 from "../assets/scene24.PNG";
 import React, { useState } from "react";
 import { Title1 } from "../fonts/text";
-import Fail from "./Fail";
+import Fail2 from "./Fail2";
 import Success from "./Sucess";
 
 export default function Scene20() {
@@ -34,7 +34,7 @@ export default function Scene20() {
     );
   }
   if (viewFail && !viewNext) {
-    return <Fail />;
+    return <Fail2 />;
   }
   if (viewNext && !viewFail) {
     return <Success />;

@@ -3,7 +3,7 @@ import scene9 from "../assets/scene9.PNG";
 import React, { useState } from "react";
 import { Title1 } from "../fonts/text";
 import Scene10 from "./Scene10";
-import Fail from "./Fail";
+import Fail2 from "./Fail2";
 
 export default function Scene9() {
   const [viewNext, setViewNext] = useState(false);
@@ -29,7 +29,7 @@ export default function Scene9() {
     );
   }
   if (viewFail && !viewNext) {
-    return <Fail />;
+    return <Fail2 />;
   }
   if (viewNext && !viewFail) {
     return <Scene10 />;
