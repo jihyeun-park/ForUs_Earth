@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import scene23 from "../assets/scene23.PNG";
+import scene22 from "../assets/scene22.PNG";
 import React, { useState } from "react";
 import { Title1 } from "../fonts/text";
 import Scene17 from "./Scene17";
@@ -14,7 +14,7 @@ export default function Scene18() {
     return (
       <Container>
         <ImagePart>
-          <LogoImg src={scene23} />
+          <LogoImg src={scene22} />
         </ImagePart>
         <StoryPart>
           <Title1>친구와 옷을 사러 간 네모!</Title1>
