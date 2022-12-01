@@ -7,3 +7,9 @@ export const Title1 = styled.div`
   line-height: 100%;
   font-family: "Ycomputer-Regular";
 `;
+
+export const Title2 = styled.div`
+  font-size: 20px;
+  line-height: 100%;
+  font-family: "Ycomputer-Regular";
+`;

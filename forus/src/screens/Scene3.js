@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Title1 } from "../fonts/text";
 import Scene4 from "./Scene4";
 import Fail from "./Fail";
+import Fail3 from "./Fail3";
 
 function Scene3() {
   const [viewNext, setViewNext] = useState(false);
@@ -38,7 +39,7 @@ function Scene3() {
     );
   }
   if (viewFail && !viewNext) {
-    return <Fail />;
+    return <Fail3 />;
   }
   if (viewNext && !viewFail) {
     return <Scene4 />;
