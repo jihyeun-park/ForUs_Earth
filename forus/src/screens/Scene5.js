@@ -72,7 +72,7 @@ const Button = styled.button`
 `;
 
 const Button2 = styled.button`
-  width: 30rem;
+  width: 350px;
   height: 5rem;
   font-size: 1rem;
   background-color: lightpink;
