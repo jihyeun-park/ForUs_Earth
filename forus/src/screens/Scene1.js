@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import logo from "../assets/character.PNG";
 import React, { useState } from "react";
-import { Button } from "antd";
 import Scene2 from "./Scene2";
 import { Title1 } from "../fonts/text";
 
@@ -20,7 +19,9 @@ function Scene1() {
             지금부터 저를 따라오세요! <br />
           </Title1>
           <BtnPart>
-            <Button onClick={() => setViewNext(true)}>Next</Button>
+            <Button onClick={() => setViewNext(true)}>
+              <Title1>Next</Title1>
+            </Button>
           </BtnPart>
         </StoryPart>
       </Container>
@@ -35,7 +36,6 @@ export default Scene1;
 const Container = styled.div`
   weight: 320px;
   height: 1024px;
-  background-color: gray;
 `;
 
 const ImagePart = styled.div`
@@ -54,4 +54,10 @@ const StoryPart = styled.div`
 
 const BtnPart = styled.div`
   margin-top: 30px;
+`;
+
+const Button = styled.button`
+  weight: 20rem;
+  height: 3rem;
+  font-size: 1rem;
 `;

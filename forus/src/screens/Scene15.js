@@ -1,26 +1,25 @@
 import styled from "styled-components";
-import scene2 from "../assets/scene2.PNG";
+import logo from "../assets/character.PNG";
 import React, { useState } from "react";
-import Scene3 from "./Scene3";
+import Scene16 from "./Scene16";
 import { Title1 } from "../fonts/text";
 
-function Scene2() {
+export default function Scene15() {
   const [viewNext, setViewNext] = useState(false);
 
   if (!viewNext) {
     return (
       <Container>
         <ImagePart>
-          <LogoImg src={scene2} />
+          <LogoImg src={logo} />
         </ImagePart>
         <StoryPart>
           <Title1>
-            평화로운 주말 오전..
+            밥을 먹고 나온 네모!
             <br />
-            네모는 느지막히 일어나
+            친구를 만나기로 했습니다.
             <br />
-            하루를 시작하려고 합니다.
-            <br /> 우선 아침을 먹어볼까요?
+            그런데 약속 장소가 너무 멉니다..
           </Title1>
           <BtnPart>
             <Button onClick={() => setViewNext(true)}>
@@ -31,11 +30,9 @@ function Scene2() {
       </Container>
     );
   } else {
-    return <Scene3 />;
+    return <Scene16 />;
   }
 }
-
-export default Scene2;
 
 const Container = styled.div`
   weight: 320px;

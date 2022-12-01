@@ -1,41 +1,40 @@
 import styled from "styled-components";
-import scene2 from "../assets/scene2.PNG";
+import scene19 from "../assets/scene19.PNG";
 import React, { useState } from "react";
-import Scene3 from "./Scene3";
 import { Title1 } from "../fonts/text";
+import Scene17 from "./Scene17";
+import Fail from "./Fail";
 
-function Scene2() {
+export default function Scene16() {
   const [viewNext, setViewNext] = useState(false);
+  const [viewFail, setViewFail] = useState(false);
 
-  if (!viewNext) {
+  if (!viewNext && !viewFail) {
     return (
       <Container>
         <ImagePart>
-          <LogoImg src={scene2} />
+          <LogoImg src={scene19} />
         </ImagePart>
         <StoryPart>
-          <Title1>
-            평화로운 주말 오전..
-            <br />
-            네모는 느지막히 일어나
-            <br />
-            하루를 시작하려고 합니다.
-            <br /> 우선 아침을 먹어볼까요?
-          </Title1>
           <BtnPart>
             <Button onClick={() => setViewNext(true)}>
-              <Title1>Next</Title1>
+              <Title1>A : 버스를 탈래요</Title1>
+            </Button>
+            <Button onClick={() => setViewFail(true)}>
+              <Title1>B : 택시를 탈래요</Title1>
             </Button>
           </BtnPart>
         </StoryPart>
       </Container>
     );
-  } else {
-    return <Scene3 />;
+  }
+  if (viewFail && !viewNext) {
+    return <Fail />;
+  }
+  if (viewNext && !viewFail) {
+    return <Scene17 />;
   }
 }
-
-export default Scene2;
 
 const Container = styled.div`
   weight: 320px;
@@ -61,7 +60,7 @@ const BtnPart = styled.div`
 `;
 
 const Button = styled.button`
-  weight: 20rem;
-  height: 3rem;
+  width: 30rem;
+  height: 5rem;
   font-size: 1rem;
 `;
