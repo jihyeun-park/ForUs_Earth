@@ -1,15 +1,20 @@
 import styled from "styled-components";
-import bear from "../assets/bear.jpg";
+import logo from "../assets/logo.png";
 import { Title1 } from "../fonts/text";
 
 export default function Sucess() {
   return (
     <Container>
       <ImagePart>
-        <LogoImg src={bear} />
+        <LogoImg src={logo} />
       </ImagePart>
       <StoryPart>
-        <Title1>당신을 북극곰을 지켰습니다!</Title1>
+        <Title1>
+          지금까지 지구레인저였습니다. <br />
+          관심을 가지고 참여해 주셔서 고맙습니다.
+          <br />
+          지금부터 환경을 아껴주시고 많이 사랑해주세요! <br />
+        </Title1>
       </StoryPart>
     </Container>
   );
