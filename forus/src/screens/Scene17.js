@@ -23,12 +23,12 @@ export default function Scene17() {
             <Button onClick={() => setViewNext(true)}>
               <Title1>A : 쇼핑</Title1>
             </Button>
-            <Button onClick={() => setViewNext2(true)}>
+            <Button2 onClick={() => setViewNext2(true)}>
               <Title1>B : 영화관</Title1>
-            </Button>
-            <Button onClick={() => setViewNext3(true)}>
+            </Button2>
+            <Button3 onClick={() => setViewNext3(true)}>
               <Title1>C : 카페</Title1>
-            </Button>
+            </Button3>
           </BtnPart>
         </StoryPart>
       </Container>
@@ -72,4 +72,19 @@ const Button = styled.button`
   width: 30rem;
   height: 5rem;
   font-size: 1rem;
+  background-color: lightpink;
+`;
+
+const Button2 = styled.button`
+  width: 30rem;
+  height: 5rem;
+  font-size: 1rem;
+  background-color: lightgreen;
+`;
+
+const Button3 = styled.button`
+  width: 30rem;
+  height: 5rem;
+  font-size: 1rem;
+  background-color: lightyellow;
 `;

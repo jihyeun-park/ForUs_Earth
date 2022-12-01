@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import bear from "../assets/bear.jpg";
+import river from "../assets/river.png";
 import { Title2 } from "../fonts/text";
 
 function Fail() {
   return (
     <Container>
       <ImagePart>
-        <LogoImg src={bear} />
+        <LogoImg src={river} />
       </ImagePart>
       <StoryPart>
         <Title2>
@@ -60,6 +60,6 @@ const LogoImg = styled.img`
 `;
 
 const StoryPart = styled.div`
-  margin-top: 50px;
+  margin-top: 30px;
   height: 20%;
 `;

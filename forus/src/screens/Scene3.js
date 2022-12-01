@@ -30,9 +30,9 @@ function Scene3() {
             <Button onClick={() => setViewNext(true)}>
               <Title1>A : 다 먹을래요</Title1>
             </Button>
-            <Button onClick={() => setViewFail(true)}>
+            <Button2 onClick={() => setViewFail(true)}>
               <Title1>B : 남길래요</Title1>
-            </Button>
+            </Button2>
           </BtnPart>
         </StoryPart>
       </Container>
@@ -75,4 +75,12 @@ const Button = styled.button`
   width: 30rem;
   height: 5rem;
   font-size: 1rem;
+  background-color: lightpink;
+`;
+
+const Button2 = styled.button`
+  width: 30rem;
+  height: 5rem;
+  font-size: 1rem;
+  background-color: lightgreen;
 `;

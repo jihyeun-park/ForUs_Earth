@@ -18,7 +18,6 @@ export default function Sucess() {
 const Container = styled.div`
   weight: 320px;
   height: 1024px;
-  background-color: gray;
 `;
 
 const ImagePart = styled.div`

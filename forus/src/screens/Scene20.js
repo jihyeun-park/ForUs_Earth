@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import scene19 from "../assets/scene19.PNG";
+import scene24 from "../assets/scene24.PNG";
 import React, { useState } from "react";
 import { Title1 } from "../fonts/text";
 import Fail from "./Fail";
@@ -13,7 +13,7 @@ export default function Scene20() {
     return (
       <Container>
         <ImagePart>
-          <LogoImg src={scene19} />
+          <LogoImg src={scene24} />
         </ImagePart>
         <StoryPart>
           <Title1>
@@ -25,9 +25,9 @@ export default function Scene20() {
             <Button onClick={() => setViewFail(true)}>
               <Title1>A : 빨대도 주세요!</Title1>
             </Button>
-            <Button onClick={() => setViewNext(true)}>
+            <Button2 onClick={() => setViewNext(true)}>
               <Title1>B : 빨래 필요없어요!</Title1>
-            </Button>
+            </Button2>
           </BtnPart>
         </StoryPart>
       </Container>
@@ -68,4 +68,12 @@ const Button = styled.button`
   width: 30rem;
   height: 5rem;
   font-size: 1rem;
+  background-color: lightpink;
+`;
+
+const Button2 = styled.button`
+  width: 30rem;
+  height: 5rem;
+  font-size: 1rem;
+  background-color: lightblue;
 `;

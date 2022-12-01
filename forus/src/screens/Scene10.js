@@ -20,9 +20,9 @@ export default function Scene10() {
             <Button onClick={() => setViewNext(true)}>
               <Title1>A : 일반 쓰레기에 버려요</Title1>
             </Button>
-            <Button onClick={() => setViewFail(true)}>
+            <Button2 onClick={() => setViewFail(true)}>
               <Title1>B : 플라스틱에 버려요</Title1>
-            </Button>
+            </Button2>
           </BtnPart>
         </StoryPart>
       </Container>
@@ -63,4 +63,12 @@ const Button = styled.button`
   width: 30rem;
   height: 5rem;
   font-size: 1rem;
+  background-color: lightyellow;
+`;
+
+const Button2 = styled.button`
+  width: 30rem;
+  height: 5rem;
+  font-size: 1rem;
+  background-color: lightgreen;
 `;

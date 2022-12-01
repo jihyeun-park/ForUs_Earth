@@ -20,9 +20,9 @@ export default function Scene14() {
             <Button onClick={() => setViewNext(true)}>
               <Title1>A : 먹고 갈까요?</Title1>
             </Button>
-            <Button onClick={() => setViewFail(true)}>
+            <Button2 onClick={() => setViewFail(true)}>
               <Title1>B : 포장할까요?</Title1>
-            </Button>
+            </Button2>
           </BtnPart>
         </StoryPart>
       </Container>
@@ -63,4 +63,12 @@ const Button = styled.button`
   width: 30rem;
   height: 5rem;
   font-size: 1rem;
+  background-color: lightblue;
+`;
+
+const Button2 = styled.button`
+  width: 30rem;
+  height: 5rem;
+  font-size: 1rem;
+  background-color: lightgreen;
 `;
