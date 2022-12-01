@@ -3,6 +3,7 @@ import logo from "../assets/character.PNG";
 import React, { useState } from "react";
 import { Button } from "antd";
 import Scene2 from "./Scene2";
+import { Title1 } from "../fonts/text";
 
 function Scene1() {
   const [viewNext, setViewNext] = useState(false);
@@ -14,12 +15,14 @@ function Scene1() {
           <LogoImg src={logo} />
         </ImagePart>
         <StoryPart>
-          안녕하세요? 저는 네모입니다! <br />
-          지금부터 저를 따라오세요!
+          <Title1>
+            안녕하세요? 저는 네모입니다! <br />
+            지금부터 저를 따라오세요! <br />
+          </Title1>
+          <BtnPart>
+            <Button onClick={() => setViewNext(true)}>Next</Button>
+          </BtnPart>
         </StoryPart>
-        <div className="mainButtonWrapper">
-          <Button onClick={() => setViewNext(true)}>Next</Button>
-        </div>
       </Container>
     );
   } else {
@@ -45,5 +48,10 @@ const LogoImg = styled.img`
 `;
 
 const StoryPart = styled.div`
+  margin-top: 50px;
   height: 20%;
+`;
+
+const BtnPart = styled.div`
+  margin-top: 30px;
 `;
