@@ -17,10 +17,10 @@ export default function Scene11() {
         </ImagePart>
         <StoryPart>
           <BtnPart>
-            <Button onClick={() => setViewFail(true)}>
+            <Button onClick={() => setViewNext(true)}>
               <Title1>A : 일반 쓰레기에 버려요</Title1>
             </Button>
-            <Button2 onClick={() => setViewNext(true)}>
+            <Button2 onClick={() => setViewFail(true)}>
               <Title1>B : 종이류에 버려요</Title1>
             </Button2>
           </BtnPart>

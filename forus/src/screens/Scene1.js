@@ -58,7 +58,7 @@ const BtnPart = styled.div`
 `;
 
 const Button = styled.button`
-  weight: 20rem;
+  width: 350px;
   height: 3rem;
   font-size: 1rem;
   background-color: lightblue;

@@ -13,3 +13,11 @@ export const Title2 = styled.div`
   line-height: 100%;
   font-family: "Ycomputer-Regular";
 `;
+
+export const Title3 = styled.div`
+  font-size: 20px;
+  line-height: 100%;
+  margin-top: 2rem;
+  text-indent: 2em;
+  font-family: "Ycomputer-Regular";
+`;
