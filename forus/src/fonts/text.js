@@ -11,12 +11,14 @@ export const Title1 = styled.div`
 export const Title2 = styled.div`
   font-size: 20px;
   line-height: 100%;
+  text-align: left;
   font-family: "Ycomputer-Regular";
 `;
 
 export const Title3 = styled.div`
   font-size: 20px;
   line-height: 100%;
+  text-align: left;
   margin-top: 2rem;
   text-indent: 2em;
   font-family: "Ycomputer-Regular";
